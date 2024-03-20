@@ -1,0 +1,26 @@
+/* styles.css */
+
+/* Navbar styles */
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+nav a:hover {
+    color: #ff0; /* Change color on hover */
+}
+
+/* Section styles */
+section {
+    padding: 20px;
+    display: none; /* Hide all sections by default */
+}
+section.active {
+    display: block; /* Display active section */
+}
