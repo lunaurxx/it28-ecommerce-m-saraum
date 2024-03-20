@@ -11,6 +11,7 @@ nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 15px;
+    cursor: pointer; /* Add cursor pointer for better UX */
 }
 nav a:hover {
     color: #ff0; /* Change color on hover */
@@ -20,7 +21,4 @@ nav a:hover {
 section {
     padding: 20px;
     display: none; /* Hide all sections by default */
-}
-section.active {
-    display: block; /* Display active section */
 }

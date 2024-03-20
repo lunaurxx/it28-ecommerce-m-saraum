@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Name</title>
+    <title>Product Inventory</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+        /* CSS styles for Navbar and Sections */
+        /* Navbar styles */
         nav {
             background-color: #333;
             color: #fff;
@@ -21,45 +19,158 @@
             text-decoration: none;
             margin: 0 15px;
         }
+        nav a:hover {
+            color: #ff0; /* Change color on hover */
+        }
+
+        /* Section styles */
         section {
             padding: 20px;
+            display: none; /* Hide all sections by default */
+        }
+        section.active {
+            display: block; /* Display active section */
+        }
+
+        /* General body styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        /* Additional styling for tables, headings, etc. */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        td img {
+            max-width: 80px;
+            max-height: 80px;
+            display: block;
+            margin: 0 auto;
+        }
+        .totals {
+            margin-top: 20px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
+    <nav>
+        <a href="#product_inventory">Product Inventory</a>
+        <a href="#payment_accounting">Payment & Accounting</a>
+        <a href="#logistics">Logistics</a>
+        <a href="#customer_services">Customer Services</a>
+        <a href="#reports">Reports</a>
+    </nav>
 
-<nav>
-    <a href="#product_inventory">Product Inventory</a>
-    <a href="#payment_accounting">Payment / Accounting</a>
-    <a href="#logistics">Logistics</a>
-    <a href="#customer_services">Customer Services</a>
-    <a href="#reports">Reports</a>
-</nav>
+    <div class="container">
+        <!-- Product Inventory Section -->
+        <section id="product_inventory" class="active">
+            <h1>PRODUCT INVENTORY</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product ID</th>
+                        <th>Product Name</th>
+                        <th>Price</th>
+                        <th>Stock Quantity</th>
+                        <th>Image</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>14658</td>
+                        <td>Nike Air Zoom Pegasus</td>
+                        <td>₱5000 per pair</td>
+                        <td>100</td>
+                        <td><img src="https://www.nike.com/ph/t/air-zoom-pegasus-38-running-shoes-fKjhlF/CT2202-003" alt="Nike Air Zoom Pegasus Image"></td>
+                        <td><button class="add to charset" onclick="addToCart(1, 'Nike Air Zoom Pegasus', 5000)">Buy</button></td>
+                    </tr>
+                    <tr>
+                        <td>2587</td>
+                        <td>Adidas Ultraboost</td>
+                        <td>₱600 per pair</td>
+                        <td>150</td>
+                        <td><img src="https://www.adidas.com.ph/ultraboost-shoes/G55602.html" alt="Adidas Ultraboost Image"></td>
+                        <td><button class="buy-btn" onclick="addToCart(2, 'Adidas Ultraboost', 6000)">Buy</button></td>
+                    </tr>
+                    <tr>
+                        <td>04542</td>
+                        <td>Puma RS-X3</td>
+                        <td>₱550 per pair</td>
+                        <td>120</td>
+                        <td><img src="https://www.puma.com/en-ph/pd/rs-x3-futurama-2-youth-shoes/195339.html" alt="Puma RS-X3 Image"></td>
+                        <td><button class="add to cart-btn" onclick="addToCart(4, 'Puma RS-X3', 5500)">Buy</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="totals" id="totals"></div>
+        </section>
 
-<section id="product_inventory">
-    <h2>Product Inventory</h2>
-    <!-- Add your product inventory content here -->
-</section>
+        <!-- Payment & Accounting Section -->
+        <section id="payment_accounting">
+            <h1>PAYMENT & ACCOUNTING</h1>
+            <p>Welcome to the Payment & Accounting section. Here, you can manage your financial transactions and accounting records.</p>
+            
+            <!-- Content for Payment & Accounting -->
+            <!-- Add your content here -->
+        </section>
 
-<section id="payment_accounting">
-    <h2>Payment / Accounting</h2>
-    <!-- Add your payment/accounting content here -->
-</section>
+        <!-- Logistics Section -->
+        <section id="logistics">
+            <h1>LOGISTICS</h1>
+            <p>Welcome to the Logistics section. Here, you can manage your shipping and delivery operations.</p>
+            
+            <!-- Content for Logistics -->
+            <!-- Add your content here -->
+        </section>
 
-<section id="logistics">
-    <h2>Logistics</h2>
-    <!-- Add your logistics content here -->
-</section>
+        <!-- Customer Services Section -->
+        <section id="customer_services">
+            <h1>CUSTOMER SERVICES</h1>
+            <p>Welcome to the Customer Services section. Here, you can assist your customers and address their queries or concerns.</p>
+            
+            <!-- Content for Customer Services -->
+            <!-- Add your content here -->
+        </section>
 
-<section id="customer_services">
-    <h2>Customer Services</h2>
-    <!-- Add your customer services content here -->
-</section>
+        <!-- Reports Section -->
+        <section id="reports">
+            <h1>REPORTS</h1>
+            <p>Welcome to the Reports section. Here, you can generate and view various reports for your business.</p>
+            
+            <!-- Content for Reports -->
+            <!-- Add your content here -->
+        </section>
+    </div>
 
-<section id="reports">
-    <h2>Reports</h2>
-    <!-- Add your reports content here -->
-</section>
+    <!-- JavaScript for adding to cart -->
+    <script>
+        let totalQuantity = 0;
+        let totalPrice = 0;
 
+        function addToCart(productId, productName, price) {
+            totalQuantity++;
+            totalPrice += price;
+            document.getElementById('totals').innerText = `Total Quantity: ${totalQuantity}, Total Price: ₱${totalPrice}`;
+        }
+    </script>
 </body>
 </html>
