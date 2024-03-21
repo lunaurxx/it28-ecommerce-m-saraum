@@ -1,11 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment and Accounting</title>
+<style>
+    body {
+        font-size: 16px; /* Adjust the base font size as needed */
+        text-align: center; /* Center align the content */
+    }
+
+    .box {
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin: 20px auto; /* Center the box horizontally */
+        width: 80%; /* Set the width of the box */
+        max-width: 600px; /* Set a maximum width */
+        text-align: left; /* Align text to the left within the box */
+    }
+
+    label {
+        display: block; /* Ensure labels are displayed as block elements */
+        margin-bottom: 10px; /* Add spacing between labels */
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea,
+    select {
+        width: 100%; /* Make form inputs span full width */
+        padding: 10px; /* Add padding for better appearance */
+        margin-bottom: 15px; /* Add spacing between inputs */
+    }
+
+    button[type="submit"] {
+        width: 100%; /* Make submit button span full width */
+        padding: 10px; /* Add padding for better appearance */
+        background-color: #4CAF50; /* Green */
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #45a049; /* Darker green on hover */
+    }
+
+    ul {
+        list-style-type: none; /* Remove default bullet points */
+        padding: 0; /* Remove default padding */
+    }
+</style>
 </head>
 <body>
-    
+
+<div class="box">
+    <h2>Customer Information</h2>
+    <form action="/process_payment" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea><br>
+    </form>
+</div>
+
+<div class="box">
+    <h2>Choose Payment Method</h2>
+    <form action="/process_payment" method="POST">
+        <label for="payment_method">Select Payment Method:</label><br>
+        <select id="payment_method" name="payment_method" required>
+            <option value="gcash">GCash</option>
+            <option value="cash">Cash</option>
+            <!-- Add more payment options as needed -->
+        </select><br>
+        <button type="submit">Submit Payment</button>
+    </form>
+</div>
+
+<div class="box">
+    <h2>Accounting</h2>
+    <p>Balance: $5000</p>
+    <p>Recent Transactions:</p>
+    <ul>
+        <li>Payment of $50 on 2024-03-21</li>
+        <li>Payment of $100 on 2024-03-20</li>
+        <li>Payment of $75 on 2024-03-19</li>
+    </ul>
+</div>
+
 </body>
 </html>
