@@ -1,5 +1,3 @@
-/* style.css */
-
 /* Reset default margin and padding */
 * {
     margin: 0;
@@ -90,15 +88,29 @@ button:hover {
     background-color: #555;
 }
 
-/* Image styles */
-td img {
-    max-width: 100%;
-    height: auto;
-    display: block;
+/* Container styles */
+.container {
+    max-width: 1000px; /* Adjusted container width */
+    margin: 20px auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; /* Adjusted to space items evenly */
 }
 
-/* Totals styles */
-.totals {
-    margin-top: 20px;
-    font-weight: bold;
+/* Product styles */
+.product {
+    width: calc(30% - 20px); /* Adjusted width to fit three products in a row with spacing */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Increased border-radius for smoother corners */
+    padding: 30px; /* Increased padding for better spacing */
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box-shadow for better visual */
+    margin-bottom: 20px; /* Adjusted margin-bottom for better separation */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Adjusted border-radius for images */
 }
