@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logistics Form</title>
+    <title>Report Form</title>
     <style>
         /* Basic styling */
         body {
@@ -49,7 +49,7 @@
             color: #ff0; /* Change color on hover */
         }
 
-        /* Additional styling for Logistics Form */
+        /* Additional styling for Report Form */
         .container .form-group {
             margin-bottom: 20px;
         }
@@ -59,12 +59,14 @@
             font-weight: bold;
         }
         .container input[type="text"],
-        .container input[type="number"],
-        .container select {
+        .container textarea {
             width: 100%;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
+        }
+        .container textarea {
+            resize: vertical;
         }
         .container button {
             padding: 10px 20px;
@@ -92,31 +94,16 @@
 </nav>
 
 <div class="container">
-    <h2>Logistics Form</h2>
+    <h2>Report Form</h2>
     <div class="form-group">
-        <label for="shipment-id">Shipment ID:</label>
-        <input type="text" id="shipment-id" name="shipment-id" required>
+        <label for="report-type">Report Type:</label>
+        <input type="text" id="report-type" name="report-type" required>
     </div>
     <div class="form-group">
-        <label for="sender">Sender:</label>
-        <input type="text" id="sender" name="sender" required>
+        <label for="report-description">Report Description:</label>
+        <textarea id="report-description" name="report-description" rows="5" required></textarea>
     </div>
-    <div class="form-group">
-        <label for="recipient">Recipient:</label>
-        <input type="text" id="recipient" name="recipient" required>
-    </div>
-    <div class="form-group">
-        <label for="weight">Weight (kg):</label>
-        <input type="number" id="weight" name="weight" required>
-    </div>
-    <div class="form-group">
-        <label for="delivery-option">Delivery Option:</label>
-        <select id="delivery-option" name="delivery-option" required>
-            <option value="standard">Standard</option>
-            <option value="express">Express</option>
-        </select>
-    </div>
-    <button type="submit">Submit</button>
+    <button type="submit">Submit Report</button>
 </div>
 
 </body>
