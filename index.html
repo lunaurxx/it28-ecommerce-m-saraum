@@ -3,168 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Inventory</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>LUNA'S STORE</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: hsl(188, 74%, 60%);
-        }
-
-        /* Additional styling for tables, headings, etc. */
-        .container {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .product {
-            width: calc(33.33% - 20px); /* Adjusted width to make boxes bigger */
-            background-color: #fff;
-            border: 1px solid #ccc;
-            border-radius: 10px; /* Increased border-radius for smoother corners */
-            padding: 30px; /* Increased padding for better spacing */
-            margin-bottom: 50px; /* Increased margin-bottom for better separation */
-            box-sizing: border-box;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box-shadow for better visual */
-        }
-        .product img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 40px; /* Applied border-radius to images */
-        }
-        .product-info {
-            margin-top: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .product-info p {
-            margin: 5px 0;
-        }
-        .btn {
-            background-color: #28a745; /* Adjusted color for add to cart button */
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            padding: 5px 10px;
-            transition: background-color 0.3s ease;
-        }
-        .btn:hover {
-            background-color: #218838; /* Adjusted color for add to cart button on hover */
-        }
-        .quantity {
-            display: flex;
-            align-items: center;
-        }
-        .quantity button {
-            background-color: hwb(71 25% 0%); /* Adjusted color for quantity buttons */
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            padding: 5px;
-            margin: 0 5px;
-            transition: background-color 0.3s ease;
-        }
-        .quantity button:hover {
-            background-color: #fdf9fa; /* Adjusted color for quantity buttons on hover */
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
 </head>
 <body>
-    <h1>ajsgdjsgjgsajgdasgdahdg</h1>
-<nav class="nav">
-    <ul>
-        <li><a href="index.html">Product Inventory</a></li>
-        <li><a href="Payment.html">Payment & Accounting</a></li>
-        <li><a href="Logistics.html">Logistics</a></li>
-        <li><a href="Customer.html">Customer Service</a></li>
-        <li><a href="Reports.html">Reports</a></li>
-    </ul>
-</nav>
-
-<main>
-    <div class="container">
-        <!-- Product 1 -->
-        <div class="product">
-            <h3>Chocolate Cake</h3>
-            <img src="./media/Chocolate-Strawberry-Cake.jpg" alt="Chocolate Cake">
-            <div class="product-info">
-                <p>Price: $20</p>
-                <div class="quantity">
-                    <button class="minus">-</button>
-                    <span class="quantity-value">10</span>
-                    <button class="plus">+</button>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./image/logo.jpg" width="50px">
                 </div>
-                <button class="btn">Add to Cart</button>
-            </div>
-        </div>
+                <nav class="nav">
+                    <ul>
+                        
+                        <li><a href="index.html">Product Inventory</a></li> 
+                        <li><a href="payment.html">Payment & Accounting</a></li>
+                        <li><a href="Logistics.html">Logistics</a></li>
+                        <li><a href="customer.html">Customer Service</a></li>
+                        <li><a href="reports.html">Reports</a></li>        
+                    </ul>   
+                </nav>
+            </div> 
 
-        <!-- Product 2 -->
-        <div class="product">
-            <h3>Cupcakes</h3>
-            <img src="./media/download.jfif" alt="Cupcakes">
-            <div class="product-info">
-                <p>Price: $15</p>
-                <div class="quantity">
-                    <button class="minus">-</button>
-                    <span class="quantity-value">15</span>
-                    <button class="plus">+</button>
+            <section id="product inventory">
+            <div class="row">
+                <div class="col-2">
+                    <h1>WELCOME TO LUNA'S TRENDS SHOP</h1>
+                    <p> At New Trend Shop, we're more than just a store; we're a gateway to the latest and greatest in fashion, lifestyle, and innovation! Step into our world where every item tells a story, every trend sets a vibe, and every purchase is an experience.</p>
+                    <a href="#item" class="btn">SHOP NOW &#8594;</a>
                 </div>
-                <button class="btn">Add to Cart</button>
-            </div>
-        </div>
-
-        <!-- Product 3 -->
-        <div class="product">
-            <h3>apple  crisp cake</h3>
-            <img src="./media/apple  crisp cake.jfif" alt="Blueberry Muffins">
-            <div class="product-info">
-                <p>Price: $12</p>
-                <div class="quantity">
-                    <button class="minus">-</button>
-                    <span class="quantity-value">20</span>
-                    <button class="plus">+</button>
+                <div class="col-2">
+                    <img src="./image/photo-removebg-preview.png" width="450px">
                 </div>
-                <button class="btn">Add to Cart</button>
-            </div>
+            </div>  
         </div>
-
-    
     </div>
-</main>
-
+    <div class="categories">
+        <div class="small-container">
+         <h1>Categories</h1>
+            <div class="row">
+                <div class="col-3">
+                    <img src="./image/cat3.jfif">
+                </div>
+                <div class="col-3">
+                    <img src="./image/cat2.jfif">
+                </div>
+                <div class="col-3">
+                    <img src="./image/categories.jfif">
+                </div>
+            </div>  
+        </div>
+    </div>
+    <section id="item">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4">
+                <img src="./image/product 1.jfif">
+                <h4>Product 1</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$30.00</p>
+                <div class="btn-container">                        
+                    <button class="btn">Add to Cart</button>
+                    <button  class="buy-btn" onclick="redirectToPayment()">Buy</button>                   
+                 </div>
+            </div>
+            <div class="col-4">
+                <img src="./image/product 2.jpg">
+                <h4>Product 2</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$30.00</p>
+                <div class="btn-container">                        
+                    <button class="btn">Add to Cart</button>
+                    <button  class="buy-btn" onclick="redirectToPayment()">Buy</button>                   
+                 </div>
+            </div>
+            <div class="col-4">
+                <img src="./image/product 3.jpg">
+                <h4>Product 3</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$30.00</p>
+                <div class="btn-container">                        
+                    <button class="btn">Add to Cart</button>
+                    <button  class="buy-btn" onclick="redirectToPayment()">Buy</button>                   
+                 </div>
+            </div>
+        </div>
+    </div>
+   
+</section>
 <script>
-    // JavaScript code to handle quantity buttons
-    document.querySelectorAll('.product').forEach(item => {
-        const quantityValue = item.querySelector('.quantity-value');
-        const minusButton = item.querySelector('.minus');
-        const plusButton = item.querySelector('.plus');
-
-        // Add event listener for minus button
-        minusButton.addEventListener('click', () => {
-            let currentValue = parseInt(quantityValue.textContent);
-            if (currentValue > 0) {
-                quantityValue.textContent = currentValue - 1;
-            }
-        });
-
-        // Add event listener
-                // Add event listener for plus button
-                plusButton.addEventListener('click', () => {
-            let currentValue = parseInt(quantityValue.textContent);
-            quantityValue.textContent = currentValue + 1;
-        });
-    });
+    function redirectToPayment() {
+        window.location.href = "payment.html";
+    }
 </script>
-
 </body>
 </html>
