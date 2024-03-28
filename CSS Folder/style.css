@@ -50,37 +50,43 @@ a{
 .col-2 img{
     max-width: 200%;
     padding: 100px 0;
-}.container {
-    margin-right: 50px; /* Adjust the value as needed */
 }
-
-.col-2 {
-    float: right;
-}
-.col-2 h1 {
-    font-size: 60px;
-    margin-bottom: 20px;
-    line-height: 60px;
-    margin:3 0;
-    color: #b88d5d;
-    text-align: left;   
-    font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
+    .container {
+        margin-right: 50px; /* Adjust the value as needed */
+        text-align: left !important; /* Align text to the left within the container */
     }
-
-
-.col-2 p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    font-size: 20px;
-    margin: 5px 0;
-    color: #080808;
-    text-align: left;
-    font-family: 'Arial Narrow';  
-}
+    
+    .container {
+        margin-right: 50px; /* Adjust the value as needed */
+    }
+    
+    .col-2 {
+        float: left;
+    }
+    
+    .col-2 h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+        line-height: 60px;
+        margin: 10px 0;
+        color: #b88d5d;
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+    }
+    
+    .col-2 p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        font-size: 20px;
+        margin: 10px 0;
+        color: #080808;
+        font-family: 'Arial Narrow';
+    }
+    
+    
 
 
 .btn{
