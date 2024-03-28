@@ -3,14 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-.body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+
 .navbar{
     display: flex;
     align-items: center;
     font-size: 25px;
     padding: 20px;
+   
 }
 nav{
     flex: 1;
@@ -22,16 +21,12 @@ nav ul{
 }
 nav ul li{
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 a{
     text-decoration: none;
     color: rgb(251, 225, 180);
-}
-p{
-    color: rgb(17, 21, 21);
-}
-.container{
+}.container{
     max-width: 1100px;
     margin: auto;
     padding-left: 25px;
@@ -43,22 +38,54 @@ p{
    flex-wrap: wrap;
    justify-content: space-around;
 }
+#section1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 20px;
+}
 .col-2{
-    flex-basis: 50%;
-    min-width: 200px;
+    max-width: 600px;
 }
 .col-2 img{
     max-width: 200%;
     padding: 100px 0;
+}.container {
+    margin-right: 50px; /* Adjust the value as needed */
 }
-.col-2 h1{
-    font-size: 40px;
+
+.col-2 {
+    float: right;
+}
+.col-2 h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
     line-height: 60px;
-    margin: 25px 0;
+    margin:3 0;
+    color: #b88d5d;
+    text-align: left;   
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    }
+
+
+.col-2 p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-size: 20px;
+    margin: 5px 0;
+    color: #080808;
+    text-align: left;
+    font-family: 'Arial Narrow';  
 }
+
+
 .btn{
    display: inline-block;
-   background: #d82323;; 
+   background: #996390;; 
    color: blanchedalmond;
    padding: 8px 30px;
    margin: 30px 0;
@@ -67,15 +94,6 @@ p{
 }
 .btn :hover{
     background: #afdae8;
-
-}
-.header{
-    background:radial-gradient(#f0dcc2,#e8c7af);
-    height: 160vh;
-}
-
-.categories{
-  margin: 70px 0; 
 }
 .col-3{
    flex-basis: 30%; 
@@ -86,7 +104,7 @@ p{
     width: 100%;
 }
 .small-container{
-    max-width: 1080px;
+    max-width: 2000px;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
@@ -109,8 +127,8 @@ p{
    color: aquamarine;
 }
 .btn {            
-    background-color: #28a745;
-    color: #fff;
+    background-color: #d78125d0;
+    color: #0a0a0a;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -118,22 +136,32 @@ p{
     transition: background-color 0.3s ease;            
     font-size: 16px;
 }
+.add-btn{
+    background-color: #c9a777;
+    color: #0a0a0a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease;            
+    font-size: 16px;
+}
 .btn:hover {
-    background-color: #218838;
+    background-color: #b59878d0;
 }
 .buy-btn {           
-    background-color: #ff8400;
-    color: #fff;
+    background-color: #d78125d0;
+    color: #010101;
     border: none;
     border-radius: 5px;
     cursor: pointer;            
-    padding: 10px 20px;
+    padding: 15px 20px;
     transition: background-color 0.3s ease;
     margin-left: 5px;           
     font-size: 16px;
 }
 .buy-btn:hover {
-    background-color: #e9d5b9;
+    background-color: #b59878d0;
 }
 .box {
             border: 1px solid #ccc;
@@ -158,7 +186,7 @@ p{
         button[type="submit"] {
             width: 100%; 
             padding: 10px; 
-            background-color: #4CAF50; 
+            background-color: #a79c7d; 
             color: white;
             border: none;
             cursor: pointer;
@@ -189,7 +217,7 @@ p{
             cursor: pointer;
         }
         button:hover {
-            background-color: #0056b3;
+            background-color: #b1a899;
         }
         html {
             scroll-behavior: smooth;
@@ -199,29 +227,31 @@ p{
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #d4ae82; /* Change background color as needed */
+            background-color: none; /* Change background color as needed */
             z-index: 999; /* Ensure navigation bar stays on top of other elements */
             padding: 1px 0;
             transition: top 0.3s; /* Add smooth transition effect */
+       
         }
         .navbar ul {
             margin: 0;
             padding: 0;
             list-style: none;
             text-align: center;
+       
         }
         .navbar li {
             display: inline;
         }
         .navbar a {
-            color: white; /* Change link color as needed */
+            color: rgb(8, 8, 8); /* Change link color as needed */
             text-decoration: none;
             padding: 5px 15px;
-            font-size: 14px;
+            font-size: 20px;
             transition: background-color 0.3s; /* Add smooth transition effect */
         }
         .navbar a:hover {
-            background-color: #555; /* Change hover background color as needed */
+            background-color: #e8dede; /* Change hover background color as needed */
         }
         /* Add padding to the body to make space for fixed navigation */
         body {
@@ -233,6 +263,7 @@ p{
             text-align: center;
            
         }.header {
-            font-family: 'Arial', sans-serif; /* Change 'Arial' to your desired font family */
+            font-family: 'Arial', sans-serif; 
+           /* Change 'Arial' to your desired font family */
         }
-          
+  
