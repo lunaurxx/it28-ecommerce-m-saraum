@@ -11,9 +11,9 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     padding: 30px;
     margin: 20px auto;
-    max-width: 600px;
+    max-width: 700px;
     position: absolute;
-    left: 35%;
+    right: 50%;
     top: 15%;
    }
 
@@ -23,7 +23,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #6e0226;
+    color: #bd7d3e;
     margin-bottom: 30px;
 }
 
@@ -40,10 +40,10 @@ label {
 input[type="text"],
 input[type="number"],
 select {
-    width: 100%;
+    width: 130%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 16px;
     transition: border-color 0.3s ease;
 }
@@ -51,14 +51,14 @@ select {
 input[type="text"]:focus,
 input[type="number"]:focus,
 select:focus {
-    border-color: #6e0226;
+    border-color: #d3a6b5;
 }
 
 input[type="button"] {
     width: 100%;
     padding: 15px;
-    background-color: #6e0226;
-    color: #fff;
+    background-color: #c6a063;
+    color: #0a0909;
     border: none;
     border-radius: 5px;
     font-size: 18px;
@@ -67,7 +67,7 @@ input[type="button"] {
 }
 
 input[type="button"]:hover {
-    background-color: #4a001a;
+    background-color: #c78e32ef;
 }
 nav{
     flex: 1;

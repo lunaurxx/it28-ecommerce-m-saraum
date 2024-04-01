@@ -4,33 +4,42 @@
     box-sizing: border-box;
 }
 
-.navbar{
-    display: flex;
-    align-items: center;
-    font-size: 25px;
-    padding: 20px;
-   
-}
-nav{
-    flex: 1;
-    text-align: center;
-}
-nav ul{
-    display: inline-block;
-    list-style: none;
-}
-nav ul li{
-    display: inline-block;
-    margin-right: 10px;
-}
-a{
-    text-decoration: none;
-    color: rgb(251, 225, 180);
-}.container{
-    max-width: 1100px;
+.container {
+    max-width: 1200px;
     margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 0 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: medium;
+}
+
+.navbar ul li a:hover {
+    color: rgb(17, 17, 16);
+    background-color: #d4b9c2;
 }
 .row{
    display: flex; 
@@ -231,7 +240,7 @@ a{
         .navbar {
             position: fixed;
             top: 0;
-            left: 0;
+            right: 70;
             width: 100%;
             background-color: none; /* Change background color as needed */
             z-index: 999; /* Ensure navigation bar stays on top of other elements */
@@ -243,7 +252,7 @@ a{
             margin: 0;
             padding: 0;
             list-style: none;
-            text-align: center;
+            text-align: left;
        
         }
         .navbar li {
